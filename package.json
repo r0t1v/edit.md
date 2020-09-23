@@ -1,0 +1,22 @@
+{
+  "name": "edit.md",
+  "version": "1.0.0",
+  "description": "\tA Simple API for Markdown editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r0t1v/edit.md.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r0t1v/edit.md/issues"
+  },
+  "homepage": "https://github.com/r0t1v/edit.md#readme",
+  "devDependencies": {
+    "electron": "^10.1.2"
+  }
+}
