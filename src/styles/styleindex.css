@@ -3,19 +3,78 @@
   margin:0;
   padding: 0;
 }
+
 .titleBar {
   display: flex;
   height: 30px;
   justify-content: space-between;
-  background: tomato;
+  align-items: center;
+  background: rgb(63, 67, 66);
+  color: white;
+  font-weight: bolder;
 }
+
 .windowcontroller{
   display: flex;
 }
+.windowcontroller .winicon{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 5px 10px;
+}
+
+.titleBar .icon {
+  padding: 2px;
+}
+
 .titleBar .icon::before {
-   content: '';
-   width: 30px;
-   height: 30px;
-   background: url(../assets/teste.png);
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url(../assets/teste.png);
   display: block;
+}
+
+.winminimize::before {
+  content: '\1F5D5';
+}
+
+.winmaximize::before {
+  content: '\1F5D6';
+}
+
+.winclose::before {
+  content: '\2716';
+}
+
+.winminimize:hover {
+  background:   rgba(255, 255, 255, 0.405);
+}
+
+.winmaximize:hover {
+  background:  rgba(255, 255, 255, 0.405);
+}
+
+.winclose:hover {
+  background: rgb(235, 63, 63);
+}
+
+.general-container {
+  display: flex;
+  height: 100vh;
+  background-color: rgba(63, 67, 66, 0.83);
+}
+
+.left-container {
+  margin: 10px;
+  width: 50%;
+  background-color: chocolate;
+}
+
+.right-container {
+  margin: 10px;
+  width: 50%;
+  background-color: coral;
 }
