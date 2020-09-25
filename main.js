@@ -2,17 +2,31 @@ const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
   // Cria uma janela de navegação.
-  const win = new BrowserWindow({
+  const win = new BrowserWindow ({
+    titleBarStyle: 'hidden',
     width: 800,
     height: 600,
+    show: false,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    //frame: false
   })
-
+  const splash = new BrowserWindow({
+    transparent: true,
+     width: 394,
+     height: 286,
+     frame: false
+   });
+win.once('ready-to-show', () => {
+        setTimeout(function(){
+            splash.close();
+            win.show();
+        },3000);
+  })
   // e carrega o arquivo index.html do seu aplicativo.
+  splash.loadFile('src/splash.html')
   win.loadFile('index.html')
-
   // Abrir o DevTools (aba de ferramentas para desenvolvedores).
   // win.webContents.openDevTools()
 }
@@ -30,7 +44,6 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
-
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
