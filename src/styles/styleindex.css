@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+.titleBar {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  background: tomato;
+}
+.windowcontroller{
+  display: flex;
+}
+.titleBar .icon::before {
+   content: '';
+   width: 30px;
+   height: 30px;
+   background: url(../assets/teste.png);
+  display: block;
+}
