@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
+  overflow: hidden;
 }
 
 .titleBar {
@@ -9,7 +10,7 @@
   height: 30px;
   justify-content: space-between;
   align-items: center;
-  background: rgb(63, 67, 66);
+  background-image: linear-gradient(to right, #00FFFF, #000066);
   color: white;
   font-weight: bolder;
 }
@@ -18,11 +19,11 @@
   display: flex;
 }
 .windowcontroller .winicon{
-  height: 30px;
+  height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 10px 5px 10px;
+  padding: 4px 5px 4px 5px;
 }
 
 .titleBar .icon {
@@ -31,24 +32,20 @@
 
 .titleBar .icon::before {
   content: '';
-  width: 24px;
-  height: 24px;
-  background: url(../assets/teste.png);
+  width: 22px;
+  height: 26px;
+  background: url(../assets/iconform.png);
   display: block;
 }
-
-.winminimize::before {
+ /* .winminimize::before {
   content: '\1F5D5';
 }
-
 .winmaximize::before {
   content: '\1F5D6';
 }
-
 .winclose::before {
   content: '\2716';
 }
-
 .winminimize:hover {
   background:   rgba(255, 255, 255, 0.405);
 }
@@ -58,9 +55,9 @@
 }
 
 .winclose:hover {
-  background: rgb(235, 63, 63);
+  background:  rgba(255, 255, 255, 0.405);
 }
-
+*/
 .general-container {
   display: flex;
   height: 100vh;

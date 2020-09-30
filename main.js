@@ -4,8 +4,8 @@ function createWindow () {
   // Cria uma janela de navegação.
   const win = new BrowserWindow ({
     titleBarStyle: 'hidden',
-    width: 800,
-    height: 600,
+    width: 900,
+    height: 620,
     show: false,
     webPreferences: {
       nodeIntegration: true
@@ -51,7 +51,6 @@ app.on('activate', () => {
     createWindow()
   }
 })
-
 // Nesse arquivo, você pode incluir o resto do código principal
 // de processos do seu aplicativo.
 // Você também pode colocar eles em arquivos separados e requeridos-as aqui.
