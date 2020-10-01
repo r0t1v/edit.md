@@ -1,4 +1,4 @@
-const { remote } = require('electron');
+const { remote, app } = require('electron');
 const win = remote.getCurrentWindow();
 
 /*var btnminimize = document.querySelector('.winminimize');
@@ -6,6 +6,12 @@ btnminimize.addEventListener('click', function() {
       win.minimize();
 });*/
 var winController = document.querySelectorAll('.winicon');
+const appImages = document.querySelectorAll('img');
+
+appImages.forEach(image => {
+  image.ondragstart = () => false;
+});
+
 winController.forEach((item) => {
   item.addEventListener('click', () => windowActions(item.classList[1]))
 });
