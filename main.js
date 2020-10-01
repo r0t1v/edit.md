@@ -22,6 +22,7 @@ win.once('ready-to-show', () => {
         setTimeout(function(){
             splash.close();
             win.show();
+            win.maximize();
         },3000);
   })
   // e carrega o arquivo index.html do seu aplicativo.
