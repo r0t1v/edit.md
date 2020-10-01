@@ -10,7 +10,7 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: true
     },
-    //frame: false
+    frame: false
   })
   const splash = new BrowserWindow({
     transparent: true,

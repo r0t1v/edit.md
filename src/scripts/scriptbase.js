@@ -1,11 +1,31 @@
 const { remote } = require('electron');
 const win = remote.getCurrentWindow();
 
-var btnminimize = document.querySelector('.winminimize');
+/*var btnminimize = document.querySelector('.winminimize');
 btnminimize.addEventListener('click', function() {
       win.minimize();
-      console.log("chegou!");
+});*/
+var winController = document.querySelectorAll('.winicon');
+winController.forEach((item) => {
+  item.addEventListener('click', () => windowActions(item.classList[1]))
 });
+
+function windowActions(flag) {
+  if (flag === "winclose"){
+    win.close();
+  }
+  else if (flag === "winminimize"){
+    win.minimize();
+  }
+  else if (flag === "winmaximize"){
+      if (!win.isMaximized()){
+        win.maximize();
+      }else {
+        win.unmaximize();
+      }
+  }
+}
+
 
 var a = document.querySelector('#winclose');
 a.addEventListener('mouseover', function (event) {

@@ -13,10 +13,12 @@
   background-image: linear-gradient(to right, #00FFFF, #000066);
   color: white;
   font-weight: bolder;
+  -webkit-app-region:drag;
 }
 
 .windowcontroller{
   display: flex;
+  -webkit-app-region:no-drag;
 }
 .windowcontroller .winicon{
   height: 22px;
