@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/r0t1v/edit.md#readme",
   "devDependencies": {
-    "electron": "^10.1.2"
+    "electron": "^9.2.1"
   }
 }
