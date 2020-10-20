@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+}
+.bcloseinit{
+  margin-top: 0px;
+  position: relative;
+}
+.baboutinit{
+  margin-top: 243px;
+  position: relative;
+}
+.boptions{
+  margin: 2px;
+  width: 900px;
+  height: 570px;
+  position: absolute;
+}

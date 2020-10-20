@@ -27,9 +27,8 @@
   align-items: center;
   padding: 4px 5px 4px 5px;
 }
-
 .titleBar .icon {
-  padding: 2px;
+
 }
 
 .titleBar .icon::before {
@@ -61,19 +60,29 @@
 }
 */
 .general-container {
+  align-items: center;
   display: flex;
-  height: 100vh;
-  background-color: rgba(63, 67, 66, 0.83);
+  /*  height: 100vh; */
+  background-color: #FFFF;
 }
 
 .left-container {
   margin: 10px;
-  width: 50%;
-  background-color: chocolate;
+  width: 40%;
+  padding: 1px 2px 1px 2px;
 }
-
+.center-container{
+  width: 10%;
+  height: 90%;
+}
 .right-container {
   margin: 10px;
-  width: 50%;
-  background-color: coral;
+  width: 40%;
+  padding: 1px 2px 1px 2px;
+}
+#intext {
+  resize: none;
+}
+#outtext {
+  resize: none;
 }

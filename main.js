@@ -5,7 +5,7 @@ function createWindow () {
   const win = new BrowserWindow ({
     titleBarStyle: 'hidden',
     width: 900,
-    height: 620,
+    height: 570,
     show: false,
     webPreferences: {
       nodeIntegration: true
@@ -22,12 +22,11 @@ win.once('ready-to-show', () => {
         setTimeout(function(){
             splash.close();
             win.show();
-            win.maximize();
         },3000);
   })
   // e carrega o arquivo index.html do seu aplicativo.
-  splash.loadFile('src/splash.html')
-  win.loadFile('index.html')
+  splash.loadFile('cards/splash.html')
+  win.loadFile('cards/init.html')
   // Abrir o DevTools (aba de ferramentas para desenvolvedores).
   // win.webContents.openDevTools()
 }

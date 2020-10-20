@@ -8,8 +8,6 @@
 </head>
 <body>
   <div class="titleBar">
-      <div class="icon"></div>
-      <div class="title"><p>edit.md</p></div>
       <div class="windowcontroller">
             <div class="winicon winclose">
                 <img src="src/assets/close.png" id ="winclose" alt="close"/>
@@ -21,10 +19,21 @@
               <img src="src/assets/minimize.png" id="winminimize" alt="minimize"/>
           </div>
       </div>
+        <div class="icon"></div>
+      <div class="title"><p>edit.md</p></div>
     </div>
     <div class="general-container">
-      <div class="left-container"></div>
-      <div class="right-container"></div>
+        <div class="left-container">
+          <textarea id="intext" name="inputtext" rows="34" cols="45" autofocus>
+          </textarea>
+        </div>
+        <div class="center-container">
+
+        </div>
+        <div class="right-container">
+          <textarea id="outtext" name="outputtext" rows="34" cols="45" readonly disabled>
+          </textarea>
+          </div>
     </div>
     <script type ="text/javascript" src="src/scripts/scriptbase.js"></script>
 </body>

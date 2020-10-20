@@ -31,8 +31,6 @@ function windowActions(flag) {
       }
   }
 }
-
-
 var a = document.querySelector('#winclose');
 a.addEventListener('mouseover', function (event) {
     event.preventDefault();
